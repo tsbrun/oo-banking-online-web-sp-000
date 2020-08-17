@@ -14,10 +14,10 @@ class Transfer
 
   def execute_transaction
     # access sender's balance
-    sender.balance - amount
+    sender.balance -= amount
     # remove amount
     # access receiver's balance
     # add amount
-    receiver.balance + amount
+    receiver.balance += amount
   end
 end
